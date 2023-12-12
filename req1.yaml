@@ -20,7 +20,7 @@
 
    - name: Check result
      ios_command:
-       commands: sh run | begin int e0/1
+       commands: sh run
      register: result
      tags: show
 
