@@ -5,6 +5,11 @@
   connection: network_cli
  
   tasks:
+   - name: Add banner
+     ios_config:
+       lines:
+         - banner motd # 501 glushkova daria at-01 #
+   
    - name: Load new ACL into device
      ios_config:
        parents: ip access-list standard VTY
